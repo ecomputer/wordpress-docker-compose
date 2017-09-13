@@ -11,3 +11,5 @@ rm -rf .git
 ```
 
 Now you are able to start the docker-compose, and initialize a new git repository!
+
+Tested with Wordpress 4.8.1 using php 7.1
