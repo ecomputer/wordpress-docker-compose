@@ -12,5 +12,6 @@ RUN set -ex; \
 	docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; \
 	docker-php-ext-install gd mysqli
 
+RUN usermod -u 1000 www-data
 
 RUN a2enmod rewrite && service apache2 restart
